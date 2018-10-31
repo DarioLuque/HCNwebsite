@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HippieChick Noms</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<body>
+  <div class="top-box"></div>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="1956539157936304"
+  theme_color="#BB1D15">
+</div>
+<div class="container">
+  <header>
+    <h1><a href="/">Connect With the Hippies</a></h1>
+    <div class="hero">
+      <h2>Let's Talk Noms!</h2>
+    </div>
+  </header>
+
+  <main>
+    <h2>We Love Hearing From You</h2>
+
+    <div>
+      <section>
+        <p>Here at HippieChick Noms we love hearing from our friends, fans and customers. The best way to get in touch with us is in person at one of the many markets or events we are at! But if you just can't wait, you can message us on Facebook or Instagram, or send us an email.</p>
+      </section>
+      <section>
+        <h3>Facebook</h3>
+        <p>If you're on Facebook, come and find us and like us to keep up with the latest news!</p>
+        <div class="fb-like" data-href="https://developers.facebook.com/hippiechicknoms/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      </section>
+      <section>
+        <h3>Instagram</h3>
+        <p>Come visit us on <a href="https://instagram.com/hippiechicknoms" target="_blank">Instagram!</a></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="flex-between">
+      <span>
+        <a href="https://facebook.com/hippiechicknoms"><img src="./img/fblogo.svg" class="social-media"></a>
+        <a href="https://instagram.com/hippiechicknoms"><img src="./img/iglogo.png" class="social-media"></a>
+      </span>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="connect">Connect</a></li>
+        <!-- <li><a href="products.html">Products</a></li>
+        <li><a href="find-us.html">Find Us</a></li> -->
+      </ul>
+    </nav>
+  </div>
+    <div class="copyright">
+      <span>&copy;2018 HippieChick Noms</span>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
