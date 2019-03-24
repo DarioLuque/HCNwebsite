@@ -1,0 +1,192 @@
+.top-box{
+  position: absolute;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20rem;
+  background-color: var(--main-color);
+
+}
+
+a {
+  color: hsl(204, 63%, 53%);
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+a:visited {
+  color: hsl(204, 63%, 53%);
+}
+
+header h1 {
+  font-family: BetterFly, cursive;
+  font-size: var(--text-xl);
+  color: var(--dark-color)/*hsl(120, 61%, 34%)*/;
+  margin: 0;
+  align-self: flex-start;
+}
+
+h1 > a,
+h1 > a:visited {
+  font-variant: normal;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/*****
+Main styles
+*****/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: 'Crimson Text', serif;
+}
+
+main {
+  margin: 0 1rem;
+  padding: 1rem;
+  grid-column: 2 / -2;
+  grid-row: 2 /span 1;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/Hippie-Chick-Monkey.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  height: 15rem;
+  width: 75%;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+		1.5px 1.5px 0 #000;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+section {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 5vmin;
+}
+
+
+.bio img {
+  min-width: 5em;
+  width: 30vw;
+  order: -1;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 37.5em) {
+  header h1 {font-size: var(--text-xxxl)}
+}
+
+/* @media (min-width: 50em) {
+  .flex {
+    flex-direction: row;
+  }
+  .flex-center {
+    padding: 0;
+  }
+
+  section {
+    flex: 1;
+  }
+
+
+  .flex section + section {
+    margin-top: 0;
+    margin-left: 2em;
+  }
+} */
+
+
+/*****
+Footer Area
+*****/
+
+footer {
+  margin: 0;
+  font-size: var(--text-xs);
+  background-color: var(--main-color);
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  width: 1rem;
+  margin: 0.5rem;
+}
+
+nav {
+  margin-right: 4rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding: 1em 2em;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--pop-color);
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav li+li {
+  border-top: 2px solid var(--pop-color);
+}
+
+.current-link {
+  background-color: hsl(120, 61%, 34%);
+}
+
+.current-link a {
+  color: black;
+}
+
+.copyright {
+  text-align: right;
+  padding: 1.5em 1.5em 1.5em 0;
+}

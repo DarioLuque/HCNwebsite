@@ -1,0 +1,31 @@
+
+
+h1, .t1 {
+  font-size: var(--text-xxxl);
+}
+
+h2, .t2 {
+  font-size: var(--text-xxl);
+}
+
+h3, .t3 {
+  font-size: var(--text-lg);
+}
+
+h4, .s1 {
+  font-size: var(--text-sm);
+}
+
+h5, .s2 {
+  font-size: var(--text-xs);
+}
+
+h1 {
+  font-family: "BetterFly";
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "BFNarrow", cursive;
+  color: hsl(120, 61%, 34%);
+  margin: 0.5em 0;
+}

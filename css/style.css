@@ -1,0 +1,397 @@
+.top-box{
+  position: absolute;
+  z-index: -9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 20rem;
+  background-color: var(--main-color);
+
+}
+
+a {
+  color: hsl(204, 63%, 53%);
+  text-decoration: none;
+  font-variant: small-caps;
+  font-weight: bold;
+}
+a:visited {
+  color: hsl(204, 63%, 53%);
+}
+
+header h1 {
+  font-family: BetterFly, cursive;
+  font-size: var(--text-xl);
+  color: var(--dark-color)/*hsl(120, 61%, 34%)*/;
+  margin: 0;
+  align-self: flex-start;
+}
+
+h1 > a,
+h1 > a:visited {
+  font-variant: normal;
+  color: black;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+/*****
+Main styles
+*****/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-family: 'Crimson Text', serif;
+}
+
+main {
+  margin: 0 1rem;
+  padding: 1rem;
+  grid-column: 2 / -2;
+  grid-row: 2 /span 1;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/Hippie-Chick-Monkey.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  height: 15rem;
+  width: 75%;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  text-shadow:
+		-1.5px -1.5px 0 #000,
+		1.5px -1.5px 0 #000,
+		-1.5px 1.5px 0 #000,
+		1.5px 1.5px 0 #000;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+section {
+  background-color: white;
+  border-radius: 1rem;
+  padding: 5vmin;
+}
+
+
+.bio img {
+  min-width: 5em;
+  width: 30vw;
+  order: -1;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  padding-top: 1.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 37.5em) {
+  header h1 {font-size: var(--text-xxxl)}
+}
+
+/* @media (min-width: 50em) {
+  .flex {
+    flex-direction: row;
+  }
+  .flex-center {
+    padding: 0;
+  }
+
+  section {
+    flex: 1;
+  }
+
+
+  .flex section + section {
+    margin-top: 0;
+    margin-left: 2em;
+  }
+} */
+
+
+/*****
+Footer Area
+*****/
+
+footer {
+  margin: 0;
+  font-size: var(--text-xs);
+  background-color: var(--main-color);
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media {
+  width: 1rem;
+  margin: 0.5rem;
+}
+
+nav {
+  margin-right: 4rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding: 1em 2em;
+  margin-top: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--pop-color);
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav li+li {
+  border-top: 2px solid var(--pop-color);
+}
+
+.current-link {
+  background-color: hsl(120, 61%, 34%);
+}
+
+.current-link a {
+  color: black;
+}
+
+.copyright {
+  text-align: right;
+  padding: 1.5em 1.5em 1.5em 0;
+}
+/*****
+Colors & Breakpoints
+*****/
+
+:root {
+  --light-color: GhostWhite;
+  --black: hsl(0, 0%, 10%);
+  --main-color: hsl(128, 80%, 32%); /* #109121 */
+  --pop-color: hsl(128, 100%, 80%); /* #990A02 */
+  --pop-light: hsl(3, 80%, 41%);
+
+  /* Breakpoints */
+  --break-small: 37.5em;
+  --break-medium: 56.25em;
+  --break-large: 75em;
+
+/* set base values */
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+/* type scale */
+  --text-xs: calc(1em / var(--text-scale-ratio) / var(--text-scale-ratio));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+
+/*spacing */
+  --space-unit: 1em;
+  --space-xxs: 0.25em;
+  --space-xs: 0.5em;
+  --space-sm: 0.75em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 3.25em;
+  --space-xxl: 5.25em;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-family: 'Crimson Text', serif;
+  color: var(--black);
+}
+
+/*****
+Border Box
+*****/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*****
+FONTS
+*****/
+
+@font-face {
+  font-family: "BetterFly";
+  src: url('../fonts/betterfly-draft-webfont.eot');
+  src: url('../fonts/betterfly-draft-webfont.woff2') format('woff2'),
+       url('../fonts/betterfly-draft-webfont.woff') format('woff'),
+       url('../fonts/betterfly-draft-webfont.svg') format('svg');
+}
+
+@font-face {
+  font-family: "BFNarrow";
+  src: url('../fonts/betterfly-narrow-webfont.eot');
+  src: url('../fonts/betterfly-narrow-webfont.woff2') format('woff2'),
+       url('../fonts/betterfly-narrow-webfont.woff') format('woff');
+}
+
+
+
+ @font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Crimson Text Italic'), local('CrimsonText-Italic'), url('https://fonts.gstatic.com/s/crimsontext/v8/wlpogwHKFkZgtmSR3NB0oRJfajhRK_Z_3rhH.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Crimson Text Bold Italic'), local('CrimsonText-BoldItalic'), url('https://fonts.gstatic.com/s/crimsontext/v8/wlprgwHKFkZgtmSR3NB0oRJfajDqDuNS_LVtfaKv.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Crimson Text Regular'), local('CrimsonText-Regular'), url('https://fonts.gstatic.com/s/crimsontext/v8/wlp2gwHKFkZgtmSR3NB0oRJfbwhTIfFd3A.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Crimson Text Bold'), local('CrimsonText-Bold'), url('https://fonts.gstatic.com/s/crimsontext/v8/wlppgwHKFkZgtmSR3NB0oRJX1C1GDNNQ9rJPfw.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+.top-nav {
+  align-items: center;
+  background-color: hsla(0,0%,0%, .15);
+  display: flex;
+  font-size: var(--text-sm);
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+
+@media (min-width: 37.5em) {
+  .top-nav {font-size: var(--text-md);}
+}
+
+@media (min-width: 56.25em) {
+  .top-nav { font-size: var(--text-lg); }
+}
+
+
+
+.top-nav > * {
+  margin: 0;
+  padding: 1em 2em;
+}
+
+
+h1, .t1 {
+  font-size: var(--text-xxxl);
+}
+
+h2, .t2 {
+  font-size: var(--text-xxl);
+}
+
+h3, .t3 {
+  font-size: var(--text-lg);
+}
+
+h4, .s1 {
+  font-size: var(--text-sm);
+}
+
+h5, .s2 {
+  font-size: var(--text-xs);
+}
+
+h1 {
+  font-family: "BetterFly";
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "BFNarrow", cursive;
+  color: hsl(120, 61%, 34%);
+  margin: 0.5em 0;
+}
+/* .l-img-desc {
+  display: grid;
+  grid-template-columns: minmax(5em, 1fr) 3fr;
+  grid-column-gap: 1em;
+  grid-template-areas: "image desc"
+} */
+
+.l-img-desc-img {
+  /* grid-area: image;
+  justify-self: center;
+  align-self: center; */
+  float: left;
+  min-width: 5em;
+  width: 14vw;
+  margin-right: 1em;
+  vertical-align: middle;
+}
+
+.l-img-desc-desc {
+  vertical-align: middle;
+}
+
+.l-span-all {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+.l-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  /* grid-template-rows: auto minmax(6fr, var(--break-medium)) auto; */
+  min-height: 100vh;
+  margin: 0;
+  grid-gap: 1em;
+}
+
+.l-sub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-gap: 1.5em;
+}
