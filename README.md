@@ -6,9 +6,9 @@
 
 
 ### To-Do
-[ ] Find a better colour for links---preferably based on the monkey's purple vest
-[ ] Fix `about` page to *not* create new grid column since there are only 2 grid items
-[ ] Fix `contact` page so it has the FB messenger "message us" show up
-[ ] Add 'Where to find us' page
-[ ] Add 'Recipe' page
-[ ] Refactor grid css to not need container div ('container' class goes on `body` element)
+- [ ] Find a better colour for links—preferably based on the monkey's purple vest
+- [ ] Fix `about` page to *not* create new grid column since there are only 2 grid items
+- [ ] Fix `contact` page so it has the FB messenger "message us" show up
+- [ ] Add 'Where to find us' page
+- [ ] Add 'Recipe' page
+- [ ] Refactor grid css to not need container div ('container' class goes on `body` element)
